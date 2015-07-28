@@ -1,11 +1,11 @@
-var app = angular.module('MyApp', []);
+var app = angular.module("WhyThisCounts", ['ui.router']);
 
-  app.config(function($interpolateProvider) {
-    $interpolateProvider.startSymbol('//');
-    $interpolateProvider.endSymbol('//');
-  });
-
-
-  app.controller('DemoController', function() {
-      this.label = "This binding is brought you by // interpolation symbols.";
-  });
+app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+    $stateProvider
+    .state('home', {
+      url: '/home',
+      templateUrl: '/views/post.html',
+      controller: 'PostController'
+    });
+  $urlRouterProvider.otherwise('home');
+}]);

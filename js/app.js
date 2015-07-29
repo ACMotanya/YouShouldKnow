@@ -7,5 +7,17 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
       templateUrl: '/views/post.html',
       controller: 'PostController'
     });
-  $urlRouterProvider.otherwise('home');
-}]);
+    $stateProvider
+      .state('post', {
+        url: '/post/{id}',
+        templateUrl: 'views/singlepost.html',
+        controller: 'SinglePostController'
+      });
+      $stateProvider
+        .state('page', {
+          url: '/page/{id}',
+          templateUrl: 'views/page.html',
+          controller: 'PageController'
+        });
+    $urlRouterProvider.otherwise('home');
+  }]);

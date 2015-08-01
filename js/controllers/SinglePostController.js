@@ -1,7 +1,12 @@
-app.controller('SinglePostController', ['$scope','$http', '$stateParams', function($scope, $http, $stateParams) {
-  $http.get('data/posts.json').success(function(data) {
-    $scope.post = data[$stateParams.id];
-  });
+app.controller('SinglePostController', ['$scope','$firebaseObject', '$stateParams', function($scope, $firebaseObject, $stateParams) {
+  console.log($stateParams);
+
+  var ref = new Firebase('https://blistering-inferno-8011.firebaseio.com/' + $stateParams.id + '');
+  console.log(ref);
+
+  $scope.post = $firebaseObject(ref);
+  $scope.post.$loaded().then(console.log($scope.post));
+
   $scope.plusOneStory = function(index) {
     $scope.post.storyRating += 1;
   };

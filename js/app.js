@@ -1,11 +1,11 @@
-var app = angular.module("WhyThisCounts", ['ui.router']);
+var app = angular.module("WhyThisCounts", ['ui.router', 'firebase']);
 
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     $stateProvider
     .state('home', {
       url: '/home',
       templateUrl: '/views/post.html',
-      controller: 'PostController'
+      controller: 'FirebaseController'
     });
     $stateProvider
       .state('post', {

@@ -10,9 +10,9 @@
 <div class="rating">
   <p> {{ post.storyRating }}
     <span ng-click="plusOneStory($index)"> &#9650; </span>
-    <span ng-click="minusOneStory($index)"> &#x25bc; <span>
+    <span ng-click="minusOneStory($index)"> &#x25bc; </span>
   </p>
-</div
+</div>
 
 <ul>
   <li ng-repeat="points in post.mainContent">{{ points }}</li>
@@ -22,9 +22,9 @@
 <div class="rating">
   <p> {{ post.proRating }}
     <span ng-click="plusOnePro($index)"> &#9650; </span>
-    <span ng-click="minusOnePro($index)"> &#x25bc; <span>
+    <span ng-click="minusOnePro($index)"> &#x25bc; </span>
   </p>
-</div
+</div>
 <ul>
   <li ng-repeat="proPoints in post.proPoints">{{ proPoints }}</li>
 </ul>
@@ -33,9 +33,9 @@
 <div class="rating">
   <p> {{ post.conRating }}
     <span ng-click="plusOneCon($index)"> &#9650; </span>
-    <span ng-click="minusOneCon($index)"> &#x25bc; <span>
+    <span ng-click="minusOneCon($index)"> &#x25bc; </span>
   </p>
-</div
+</div>
 <ul>
   <li ng-repeat="conPoints in post.conPoints">{{ conPoints }}</li>
 </ul>

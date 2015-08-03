@@ -22,9 +22,11 @@ comments:   true
   Planned Parenthood says the tissue is donated for medical research.
   </li>
   <br>
-  <li>
+
+  <h3> Why This Counts </h3>
+  <p>
   Planned Parenthood’s fate hangs in the balance.
-  </li>
+  </p>
 </ul>
 
 <div class="row">

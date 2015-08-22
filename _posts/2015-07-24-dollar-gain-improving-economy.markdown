@@ -16,12 +16,12 @@ header-img: "img/post-bg-04.jpg"
   <br>
 </p>
 
-
+<fieldset>
 <div class="row">
   <div class="col-md-6 pro-points">
     <h3>Progressive Points [[ proPt ]]
-      <span ng-click="plusOnePro()"> &#9650; </span>
-      <span ng-click="minusOnePro()"> &#x25bc; </span>
+      <input type="checkbox" name="checkbox" id="checkbox_id" value="value">
+      <label for="checkbox_id">Text</label>
     </h3>
 
     <ul>
@@ -34,8 +34,8 @@ header-img: "img/post-bg-04.jpg"
 
   <div class="col-md-6 con-points">
     <h3>Conservative Points [[ conPt ]]
-      <span ng-click="plusOneCon()"> &#9650; </span>
-      <span ng-click="minusOneCon()"> &#x25bc; </span>
+      <input type="checkbox" name="checkbox" id="checkbox_id2" value="value">
+      <label for="checkbox_id">Text 2</label>
     </h3>
 
     <ul>
@@ -46,3 +46,4 @@ header-img: "img/post-bg-04.jpg"
     </ul>
   </div>
 </div>
+</fieldset>

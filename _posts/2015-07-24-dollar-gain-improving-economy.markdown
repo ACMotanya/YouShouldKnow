@@ -16,12 +16,11 @@ header-img: "img/post-bg-04.jpg"
   <br>
 </p>
 
-<fieldset>
+
 <div class="row">
   <div class="col-md-6 pro-points">
     <h3>Progressive Points [[ proPt ]]
-      <input type="checkbox" name="checkbox" id="checkbox_id" value="value">
-      <label for="checkbox_id">Text</label>
+      <input type="radio" name="checkbox" id="checkbox_id" value="pro">
     </h3>
 
     <ul>
@@ -34,8 +33,7 @@ header-img: "img/post-bg-04.jpg"
 
   <div class="col-md-6 con-points">
     <h3>Conservative Points [[ conPt ]]
-      <input type="checkbox" name="checkbox" id="checkbox_id2" value="value">
-      <label for="checkbox_id">Text 2</label>
+      <input type="radio" name="checkbox" id="checkbox_id2" value="con">
     </h3>
 
     <ul>
@@ -46,4 +44,3 @@ header-img: "img/post-bg-04.jpg"
     </ul>
   </div>
 </div>
-</fieldset>
